@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Llonsti | Sitio Oficial</title>
+  <!-- Fuente Google y librería de iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Hoja de Estilos Externa -->
+  <link rel="stylesheet" href="proyecto.css">
+</head>
+<body>
+  <!-- Barra de Navegación -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo"><h1>Llonstill</h1></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link">Inicio</a>
+        <a href="#canciones" class="nav-link">Canciones</a>
+        <a href="#albumes" class="nav-link">Álbumes</a>
+        <a href="#historia" class="nav-link">Historia</a>
+        <a href="#gira" class="nav-link">Gira</a>
+        <a href="#contacto" class="nav-link btn-nav">Booking</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-tag">NUEVO LANZAMIENTO DISPONIBLE</span>
+      <h1 class="hero-title">Llonstill ATYSHOT.</h1>
+      <p class="hero-desc">El nuevo viaje sonoro urbano que fusiona ritmos latinos con melodías electrónicas envolventes. Escúchalo ya en todas las plataformas.</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" id="btnHeroPlay">
+          <i class="fa-solid fa-play"></i> Escuchar Sencillo
+        </button>
+        <a href="#albumes" class="btn btn-outline">Explorar Álbum</a>
+      </div>
+      <div class="streaming-platforms">
+        <span>Disponible en:</span>
+        <div class="platform-icons">
+          <a href="" title="Spotify"><i class="fa-brands fa-spotify"></i></a>
+          <a href="#" title="Apple Music"><i class="fa-brands fa-apple"></i></a>
+          <a href="https://www.youtube.com/@llonstill" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" title="Deezer"><i class="fa-brands fa-deezer"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Canciones Populares -->
+  <section id="canciones" class="section-container">
+    <div class="section-header">
+      <span class="sub-heading">En Tendencia</span>
+      <h2>Top Canciones</h2>
+      <p>Los temas más reproducidos por la comunidad en vivo y en plataformas.</p>
+    </div>
+
+    <div class="tracks-list" id="tracksContainer">
+      <!-- Se carga dinámicamente con JavaScript -->
+    </div>
+  </section>
+  <!-- Discografía / Álbumes -->
+  <section id="albumes" class="section-container alt-bg">
+    <div class="section-header">
+      <span class="sub-heading">Producciones</span>
+      <h2>Álbumes & Discografía</h2>
+      <p>Sumérgete en cada etapa conceptual del proyecto musical.</p>
+    </div>
+    <!-- Filtro -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="album">Álbumes</button>
+      <button class="filter-btn" data-filter="ep">EPs & Singles</button>
+    </div>
+    <div class="albums-grid" id="albumsContainer">
+      <!-- Se carga dinámicamente con JavaScript -->
+    </div>
+  </section>
+
+  <!-- Historia / Biografía -->
+  <section id="historia" class="section-container">
+    <div class="section-header">
+      <span class="sub-heading">Trayectoria</span>
+      <h2>La Historia Detrás de la Voz</h2>
+    </div>
+    <div class="bio-wrapper">
+      <div class="bio-img-box">
+        <img src="ESCOGUIDA PA FONDO.jpeg" alt="Llonstill">
+        <div class="bio-quote">
+          <p>"La música no solo se escucha: se siente en los huesos y se vive con el alma."</p>
+          <span>— Alex Ríos</span>
+        </div>
+      </div>
+      <div class="bio-text">
+        <h3>Desde las calles hasta los grandes escenarios</h3>
+        <p>Comenzando a componer a los 16 años con una guitarra acústica y un micrófono casero, Alex Ríos transformó vivencias cotidianas en himnos urbanos que rápidamente captaron la atención de miles en redes.</p>
+        <p>Tras consolidar su estilo en 2021 combinando sintetizadores contemporáneos con letras de desamor, superación y fiesta, logró posicionar sencillos en el Top 50 regional y colaborar con reconocidos productores internacionales.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-year">2020</span>
+            <h4>Inicios & Primer Single</h4>
+            <p>Lanzamiento independiente de su primer sencillo digital grabado en home studio.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2023</span>
+            <h4>Primer Álbum: "Insomnio"</h4>
+            <p>Disco debut con más de 12 millones de reproducciones globales.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2026</span>
+            <h4>Gira Continental & "Ecos en la Noche"</h4>
+            <p>Nuevo trabajo discográfico y gira internacional en más de 8 ciudades.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Gira de Conciertos -->
+  <section id="gira" class="section-container alt-bg">
+    <div class="section-header">
+      <span class="sub-heading">En Vivo</span>
+      <h2>Próximas Fechas de Gira</h2>
+    </div>
+    <div class="tour-table-wrapper">
+      <table class="tour-table">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Ciudad / País</th>
+            <th>Lugar</th>
+            <th>Estado</th>
+            <th>Entradas</th>
+          </tr>
+        </thead>
+        <tbody id="tourTableBody">
+          <!-- Renderizado dinámicamente -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- Contacto / Booking -->
+  <section id="contacto" class="section-container">
+    <div class="section-header">
+      <span class="sub-heading">Management & Prensa</span>
+      <h2>Contacto & Booking</h2>
+      <p>Para presentaciones en vivo, festivales, patrocinios y colaboraciones.</p>
+    </div>
+    <div class="contact-card">
+      <form id="bookingForm" class="booking-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nombre / Organización *</label>
+            <input type="text" id="name" required placeholder="Ej. Producciones Norte">
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico *</label>
+            <input type="email" id="email" required placeholder="correo@ejemplo.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Teléfono / WhatsApp</label>
+            <input type="tel" id="phone" placeholder="+57 300 000 0000">
+          </div>
+          <div class="form-group">
+            <label for="eventType">Tipo de Evento</label>
+            <select id="eventType">
+              <option value="concierto">Concierto Privado / Fiesta</option>
+              <option value="festival">Festival / Escenario Público</option>
+              <option value="prensa">Entrevista / Medios</option>
+              <option value="colaboracion">Colaboración Musical</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Detalles del Evento o Propuesta *</label>
+          <textarea id="message" rows="4" required placeholder="Ciudad, fecha tentativa, aforo estimado, etc."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Enviar Solicitud de Booking</button>
+      </form>
+    </div>
+  </section>
+  <!-- Barra de Reproducción Inferior Persistente -->
+  <div class="bottom-player" id="bottomPlayer">
+    <div class="player-info">
+      <img id="playerCover" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=150&q=80" alt="Cover">
+      <div>
+        <h4 id="playerTitle">Ecos en la Noche</h4>
+        <span id="playerArtist">Alex Ríos</span>
+      </div>
+    </div>
+    <div class="player-center">
+      <div class="player-controls">
+        <button id="btnPrev" title="Anterior"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="btnPlay" class="btn-play-circle" title="Reproducir"><i class="fa-solid fa-play"></i></button>
+        <button id="btnNext" title="Siguiente"><i class="fa-solid fa-forward-step"></i></button>
+      </div>
+      <div class="player-progress-box">
+        <span id="currTime">0:00</span>
+        <div class="progress-bar-bg" id="progressBg">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <span id="durTime">3:24</span>
+      </div>
+    </div>
+    <div class="player-extra">
+      <i class="fa-solid fa-volume-high"></i>
+      <input type="range" id="volSlider" min="0" max="1" step="0.05" value="0.8">
+    </div>
+  </div>
+  <!-- Toast Notificación -->
+  <div class="toast" id="toast"></div>
+  <!-- Script Externo -->
+  <script src="proyecto.js"></script>
+  <!-- Barra de Reproducción Inferior -->
+  <div class="bottom-player" id="bottomPlayer">
+    <div class="player-info">
+      <img id="playerCover" src="ESCOGUIDA PA FONDO.jpeg" alt="Cover">
+      <div>
+        <h4 id="playerTitle">Selecciona una pista</h4>
+        <span id="playerArtist">Llonstill</span>
+      </div>
+    </div>
+    <div class="player-center">
+      <div class="player-controls">
+        <button id="btnPrev" title="Anterior"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="btnPlay" class="btn-play-circle" title="Reproducir"><i class="fa-solid fa-play"></i></button>
+        <button id="btnNext" title="Siguiente"><i class="fa-solid fa-forward-step"></i></button>
+      </div>
+      <div class="player-progress-box">
+        <span id="currTime">0:00</span>
+        <div class="progress-bar-bg" id="progressBg">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <span id="durTime">0:00</span>
+      </div>
+    </div>
+    <div class="player-extra">
+      <i class="fa-solid fa-volume-high"></i>
+      <input type="range" id="volSlider" min="0" max="1" step="0.05" value="0.8">
+    </div>
+  </div>
+ <!-- Barra de Reproducción Inferior -->
+  <div class="bottom-player" id="bottomPlayer">
+    <div class="player-info">
+      <img id="playerCover" src="ESCOGUIDA PA FONDO.jpeg" alt="Cover">
+      <div>
+        <h4 id="playerTitle">Selecciona una pista</h4>
+        <span id="playerArtist">Llonstill</span>
+      </div>
+    </div>
+    <div class="player-center">
+      <div class="player-controls">
+        <button id="btnPrev" title="Anterior"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="btnPlay" class="btn-play-circle" title="Reproducir"><i class="fa-solid fa-play"></i></button>
+        <button id="btnNext" title="Siguiente"><i class="fa-solid fa-forward-step"></i></button>
+      </div>
+      <div class="player-progress-box">
+        <span id="currTime">0:00</span>
+        <div class="progress-bar-bg" id="progressBg">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <span id="durTime">0:00</span>
+      </div>
+    </div>
+    <div class="player-extra">
+      <i class="fa-solid fa-volume-high"></i>
+      <input type="range" id="volSlider" min="0" max="1" step="0.05" value="0.8">
+    </div>
+  </div>
+<!-- Barra de Reproducción Inferior -->
+  <div class="bottom-player" id="bottomPlayer">
+    <div class="player-info">
+      <img id="playerCover" src="ESCOGUIDA PA FONDO.jpeg" alt="Cover">
+      <div>
+        <h4 id="playerTitle">Selecciona una pista</h4>
+        <span id="playerArtist">Llonstill</span>
+      </div>
+    </div>
+    <div class="player-center">
+      <div class="player-controls">
+        <button id="btnPrev" title="Anterior"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="btnPlay" class="btn-play-circle" title="Reproducir"><i class="fa-solid fa-play"></i></button>
+        <button id="btnNext" title="Siguiente"><i class="fa-solid fa-forward-step"></i></button>
+      </div>
+      <div class="player-progress-box">
+        <span id="currTime">0:00</span>
+        <div class="progress-bar-bg" id="progressBg">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <span id="durTime">0:00</span>
+      </div>
+    </div>
+    <div class="player-extra">
+      <i class="fa-solid fa-volume-high"></i>
+      <input type="range" id="volSlider" min="0" max="1" step="0.05" value="0.8">
+    </div>
+  </div>
+ <!-- Barra de Reproducción Inferior -->
+  <div class="bottom-player" id="bottomPlayer">
+    <div class="player-info">
+      <img id="playerCover" src="ESCOGUIDA PA FONDO.jpeg" alt="Cover">
+      <div>
+        <h4 id="playerTitle">Selecciona una pista</h4>
+        <span id="playerArtist">Llonstill</span>
+      </div>
+    </div>
+    <div class="player-center">
+      <div class="player-controls">
+        <button id="btnPrev" title="Anterior"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="btnPlay" class="btn-play-circle" title="Reproducir"><i class="fa-solid fa-play"></i></button>
+        <button id="btnNext" title="Siguiente"><i class="fa-solid fa-forward-step"></i></button>
+      </div>
+      <div class="player-progress-box">
+        <span id="currTime">0:00</span>
+        <div class="progress-bar-bg" id="progressBg">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <span id="durTime">0:00</span>
+      </div>
+    </div>
+    <div class="player-extra">
+      <i class="fa-solid fa-volume-high"></i>
+      <input type="range" id="volSlider" min="0" max="1" step="0.05" value="0.8">
+    </div>
+  </div>
+<!-- Barra de Reproducción Inferior -->
+  <div class="bottom-player" id="bottomPlayer">
+    <div class="player-info">
+      <img id="playerCover" src="ESCOGUIDA PA FONDO.jpeg" alt="Cover">
+      <div>
+        <h4 id="playerTitle">Selecciona una pista</h4>
+        <span id="playerArtist">Llonstill</span>
+      </div>
+    </div>
+    <div class="player-center">
+      <div class="player-controls">
+        <button id="btnPrev" title="Anterior"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="btnPlay" class="btn-play-circle" title="Reproducir"><i class="fa-solid fa-play"></i></button>
+        <button id="btnNext" title="Siguiente"><i class="fa-solid fa-forward-step"></i></button>
+      </div>
+      <div class="player-progress-box">
+        <span id="currTime">0:00</span>
+        <div class="progress-bar-bg" id="progressBg">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <span id="durTime">0:00</span>
+      </div>
+    </div>
+    <div class="player-extra">
+      <i class="fa-solid fa-volume-high"></i>
+      <input type="range" id="volSlider" min="0" max="1" step="0.05" value="0.8">
+    </div>
+  </div>
+<!-- Barra de Reproducción Inferior -->
+  <div class="bottom-player" id="bottomPlayer">
+    <div class="player-info">
+      <img id="playerCover" src="ESCOGUIDA PA FONDO.jpeg" alt="Cover">
+      <div>
+        <h4 id="playerTitle">Selecciona una pista</h4>
+        <span id="playerArtist">Llonstill</span>
+      </div>
+    </div>
+    <div class="player-center">
+      <div class="player-controls">
+        <button id="btnPrev" title="Anterior"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="btnPlay" class="btn-play-circle" title="Reproducir"><i class="fa-solid fa-play"></i></button>
+        <button id="btnNext" title="Siguiente"><i class="fa-solid fa-forward-step"></i></button>
+      </div>
+      <div class="player-progress-box">
+        <span id="currTime">0:00</span>
+        <div class="progress-bar-bg" id="progressBg">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <span id="durTime">0:00</span>
+      </div>
+    </div>
+    <div class="player-extra">
+      <i class="fa-solid fa-volume-high"></i>
+      <input type="range" id="volSlider" min="0" max="1" step="0.05" value="0.8">
+    </div>
+  </div>
+  dsddsdsdsdddddddddd <!-- Barra de Reproducción Inferior -->
+  <div class="bottom-player" id="bottomPlayer">
+    <div class="player-info">
+      <img id="playerCover" src="ESCOGUIDA PA FONDO.jpeg" alt="Cover">
+      <div>
+        <h4 id="playerTitle">Selecciona una pista</h4>
+        <span id="playerArtist">Llonstill</span>
+      </div>
+    </div>
+    <div class="player-center">
+      <div class="player-controls">
+        <button id="btnPrev" title="Anterior"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="btnPlay" class="btn-play-circle" title="Reproducir"><i class="fa-solid fa-play"></i></button>
+        <button id="btnNext" title="Siguiente"><i class="fa-solid fa-forward-step"></i></button>
+      </div>
+      <div class="player-progress-box">
+        <span id="currTime">0:00</span>
+        <div class="progress-bar-bg" id="progressBg">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <span id="durTime">0:00</span>
+      </div>
+    </div>
+
+    <div class="player-extra">
+      <i class="fa-solid fa-volume-high"></i>
+      <input type="range" id="volSlider" min="0" max="1" step="0.05" value="0.8">
+    </div>
+  </div>
+<!-- Barra de Reproducción Inferior -->
+  <div class="bottom-player" id="bottomPlayer">
+    <div class="player-info">
+      <img id="playerCover" src="ESCOGUIDA PA FONDO.jpeg" alt="Cover">
+      <div>
+        <h4 id="playerTitle">Selecciona una pista</h4>
+        <span id="playerArtist">Llonstill</span>
+      </div>
+    </div>
+    <div class="player-center">
+      <div class="player-controls">
+        <button id="btnPrev" title="Anterior"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="btnPlay" class="btn-play-circle" title="Reproducir"><i class="fa-solid fa-play"></i></button>
+        <button id="btnNext" title="Siguiente"><i class="fa-solid fa-forward-step"></i></button>
+      </div>
+      <div class="player-progress-box">
+        <span id="currTime">0:00</span>
+        <div class="progress-bar-bg" id="progressBg">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <span id="durTime">0:00</span>
+      </div>
+    </div>
+    <div class="player-extra">
+      <i class="fa-solid fa-volume-high"></i>
+      <input type="range" id="volSlider" min="0" max="1" step="0.05" value="0.8">
+    </div>
+  </div>
+  <script src="proyecto.js"></script>
+</body>
+</html>
